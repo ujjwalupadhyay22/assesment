@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+    display: grid;
+    grid-template-columns: repeat(2);
+}
+.video-content{
+    height: 580px;
+    position: relative;
+}
+.video-content video{
+    height: 580px;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+.logo{
+    position: absolute;
+    top: 0;
+    background-color: rgb(192, 181, 181,0.5);
+    z-index: 1;
+    height: 85px;
+    color: white;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 32.5%;
+    margin-top: 21px;
+    font-size: 35px;
+    padding-left: 100px;
+    padding-top: 19px;
+    font-weight: 600;
+}
+.links {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 60%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(192, 181, 181,0.5);
+    z-index: 1;
+    height: 77px;
+    margin-top: 21px;
+    padding-top: 27px;
+    margin-left: 39%;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.section{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    height: 250px;
+    /* width: 100%; */
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+}
+.headp1{
+    color: white;
+    margin-left: 8%;
+    font-size: 21px;
+}
+.headp2{
+    color: white;
+    margin-left: 8%;
+    margin-top: 15px;
+    font-size: 36px;
+    font-weight: bolder;
+}
+.headp3{
+    color: white;
+    margin-left: 8%;
+    margin-top: 25px;
+    font-size: 19px;
+}
+.blue{
+    color: aqua;
+}
+.headb1{
+    background-color: rgb(179, 36, 36);
+    color: white;
+    font-size: 18px;
+    margin-left: 8%;
+    margin-top: 40px;
+    padding: 12px 25px;
+    border-radius: 20px;
+    box-shadow: none;
+    border: none;
+}
+.section_1{
+    position: absolute;
+    display: grid; 
+    grid-template-columns: repeat(6);   
+}
+.headb2{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: -30px;
+    height: 80px;
+    width: 80px;
+    z-index: 1;
+    margin-left: 10px;
+}
+.headimg1{
+    margin-right: 17px;
+}
+.service1{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-image: url(images/service-item-bg.jpg);
+    height: 300px;
+    width: 400px;
+    margin-top: -90px;
+    margin-left: 35px;
+    border-radius: 17px;
+    z-index: 1;
+}
+.headimg2,.headimg3,.headimg4{
+    margin-top: 30px;
+}
+.headp4,.headp6,.headp8{
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.headp5,.headp7,.headp9{
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 20px;
+}
+.service2{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-image: url(/images/service-item-bg.jpg);
+    height: 300px;
+    width: 400px;
+    margin-top: -90px;
+ 
+    margin-left: 35px;
+    border-radius: 17px;
+    z-index: 1;
+}
+.service3{
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-image: url(/images/service-item-bg.jpg);
+    height: 300px;
+    width: 400px;
+    margin-top: -90px;
+    margin-left: 35px;
+    border-radius: 17px;
+    z-index: 1;
+}
+.headb3{
+    grid-column: 5/6;
+    grid-row: 1/2;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: -30px;
+    height: 80px;
+    width: 80px;
+    margin-left: 15px;
+    z-index: 1;
+}
+.headimg5{
+    margin-left: 17px;
+}
+/* ----------------------------mobilescreen-------------------------------------------- */
+@media screen and (max-width:480px) {
+    .video-content{
+    height: 580px;
+    position: relative;
+}
+.video-content video{
+    height: 580px;
+    width: 320%;
+    object-fit: cover;
+    position: absolute;
+}
+.logo{
+    position: absolute;
+    top: 0;
+    background-color: rgb(192, 181, 181,0.5);
+    z-index: 1;
+    height: 85px;
+    color: white;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 32.5%;
+    margin-top: 21px;
+    font-size: 35px;
+    padding-left: 100px;
+    padding-top: 19px;
+    font-weight: 600;
+}
+.links {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 60%;
+    position: absolute;
+    top: 0;
+    background-color: rgb(192, 181, 181,0.5);
+    z-index: 1;
+    height: 77px;
+    margin-top: 21px;
+    padding-top: 27px;
+    margin-left: 39%;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 500;
+}
+.section{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    height: 250px;
+    /* width: 100%; */
+    position: absolute;
+    z-index: 1;
+    top: 20%;
+}
+.headp1{
+    color: white;
+    margin-left: 8%;
+    font-size: 21px;
+}
+.headp2{
+    color: white;
+    margin-left: 8%;
+    margin-top: 15px;
+    font-size: 36px;
+    font-weight: bolder;
+}
+.headp3{
+    color: white;
+    margin-left: 8%;
+    margin-top: 25px;
+    font-size: 19px;
+}
+.blue{
+    color: aqua;
+}
+.headb1{
+    background-color: rgb(179, 36, 36);
+    color: white;
+    font-size: 18px;
+    margin-left: 8%;
+    margin-top: 40px;
+    padding: 12px 25px;
+    border-radius: 20px;
+    box-shadow: none;
+    border: none;
+}
+.section_1{
+    position: absolute;
+    display: grid; 
+    grid-template-columns: repeat(6);   
+}
+.headb2{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: -30px;
+    height: 80px;
+    width: 80px;
+    z-index: 1;
+    margin-left: 10px;
+}
+.headimg1{
+    margin-right: 17px;
+}
+.service1{
+    grid-column: 2/3;
+    grid-row: 1/3;
+    background-image: url(images/service-item-bg.jpg);
+    height: 300px;
+    width: 400px;
+    margin-top: -90px;
+    margin-left: 35px;
+    border-radius: 17px;
+    z-index: 1;
+}
+.headimg2,.headimg3,.headimg4{
+    margin-top: 30px;
+}
+.headp4,.headp6,.headp8{
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+}
+.headp5,.headp7,.headp9{
+    color: white;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 20px;
+}
+.service2{
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-image: url(/images/service-item-bg.jpg);
+    height: 300px;
+    width: 400px;
+    margin-top: -90px;
+ 
+    margin-left: 35px;
+    border-radius: 17px;
+    z-index: 1;
+}
+.service3{
+    grid-column: 4/5;
+    grid-row: 1/3;
+    background-image: url(/images/service-item-bg.jpg);
+    height: 300px;
+    width: 400px;
+    margin-top: -90px;
+    margin-left: 35px;
+    border-radius: 17px;
+    z-index: 1;
+}
+.headb3{
+    grid-column: 5/6;
+    grid-row: 1/2;
+    border-radius: 50%;
+    padding: 5px;
+    margin-top: -30px;
+    height: 80px;
+    width: 80px;
+    margin-left: 15px;
+    z-index: 1;
+}
+.headimg5{
+    margin-left: 17px;
+}
+}
+
+        .secondpage{
+            display:  grid;
+            grid-template-columns: repeat(4);
+            height: 1300px;
+            background-image: url(images/meetings-page-bg.jpg);
+        }
+        #one-1{
+            height: 200px;
+            margin-top: 150px;
+            border: none;
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+        #one-2{
+            margin-left: 50px;
+            width: 320px;
+            height: 400px;
+            grid-column: 1/2;
+            grid-row: 2/3;
+            background-color: white;
+        }
+        #one-3{
+           
+            margin-left: 150px; 
+            height: 350px;
+            width: 375px;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .one-3subdiv1{  
+        position: relative;
+        height: 175px;
+       
+       }
+     .spbu2{
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        border: none;
+        border-radius: 10px;
+        width: 80px;
+        height: 35px
+
+     }
+     .spimg1{
+       border-top-left-radius: 20px;
+       border-top-right-radius: 20px;
+     }
+     .one-3subdiv2{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 40px;
+        height:calc(300px - 175px);
+        background-color: white;
+     }
+     .spp4{
+        padding-top: 20px;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+     }
+     .spp5{
+        text-align: center;
+        font-size: 20px;
+        color: black;
+     }
+        #one-4{
+            height: 350px;
+            width: 375px;
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        .one-4subdiv1{
+            position: relative;
+            height: 175px;
+        }
+       
+        .one-4subdiv2{
+         border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 40px;
+        height:calc(300px - 175px);
+        background-color: white;
+        }
+        #one-5{
+            background-image: url(images/meeting-03.jpg);
+            background-repeat: no-repeat;
+            margin-left: 150px;
+            height: 350px;
+            width: 375px;
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        .one-5subdiv1{
+            position: relative;
+            height: 175px;
+        }
+        .one-5subdiv2{
+            border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 40px;
+        height:calc(300px - 175px);
+        background-color: white;
+        }
+          
+        #one-6{
+            background-image: url(images/meeting-04.jpg);
+            background-repeat: no-repeat;
+            height: 350px;
+            width: 375px;
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+        .one-6subdiv1{
+            position: relative;
+            height: 175px; 
+        }
+        .one-6subdiv2{
+            border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 40px;
+        height:calc(300px - 175px);
+        background-color: white; 
+        }
+        .spp1{
+            color: white;
+            margin-top: 150px;
+            text-align: center;
+            font-size: 35px;
+            border: none;
+           
+        }
+        .sphr1{
+            color: white;
+            margin-top: 40px;
+            margin-left: 100px;
+            width: 85%;
+            height: 0px;
+        }
+        .spp2{
+            padding-top: 20px;
+            padding-left: 60px;
+            font-size: 25px;
+            color: black;
+        }
+        .spp3{
+            padding-left: 60px;
+            font-size: 20px;
+            color:black;
+        }
+        .sphr2{
+            margin-top: 15px;
+            width: 100%;
+            height: 0px;
+            color: rgb(14, 3, 3);
+        }
+        .spbu1{
+            margin-left: 50px;
+            color: white;
+            background-color: brown;
+            border: none;
+            border-radius: 20px;
+            font-size: 15px;
+            height: 50px;
+            width: 200px;
+        }
+        .thirdpage{
+            display: grid;
+            grid-template-columns: repeat(3);
+            background-image: url(images/apply-bg.jpg);
+            height: 700px;
+        }
+       
+        #two-1{
+            margin-left: 50px;
+            margin-top: 70px;
+            height: 280px;
+            width: 650px;
+            grid-row: 1/2;
+            grid-column: 1/2;
+        }
+        #two-2{
+            margin-left: 50px;
+            height: 280px;
+            width: 650px;
+            grid-row: 2/3;
+            grid-column: 1/2;
+        }
+        #two-3{
+            background-color: white;
+            border-radius: 20px;
+            margin-top: 65px;
+            height: 550px;
+            width: 500px;
+            grid-row: 1/3;
+            grid-column: 2/3;
+        }
+        .tpp1{
+            font-size: 25px;
+            color: white;
+            padding-left: 25px;
+            padding-top: 25px;
+        }
+        .tpp2{
+            color: white;
+            font-size: 20px;
+            padding-left: 25px;
+            padding-top: 15px;
+        }
+        .tpb1{
+            margin-left: 25px;
+            margin-top: 15px;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            height: 45px;
+            width: 150px;
+            background-color: brown;
+        }
+        .tpp3{
+            text-align: center;
+            padding-top: 25px;
+            font-size: 25px;
+            color: rgb(244, 183, 42);
+        }
+        .tpp4{
+            padding-top: 20px;
+            padding-left: 65px;
+            font-size: 20px;
+            color: black;
+        }
+        .tphr1{
+            margin-top: 30px;
+            margin-left: 30px;
+            width: 85%;
+        }
+        .tpp5{
+            padding-top: 25px;
+            padding-left: 65px;
+            font-size: 20px;
+            color: rgb(23, 1, 1); 
+        }
+        .fourthpage{
+            height: 700px;
+            display: grid;
+            grid-template-columns: repeat(7);
+            background-image: url(images/meetings-bg.jpg);
+        }
+        #three-1{
+            margin-top: 60px;
+            grid-column: 1/7;
+            grid-row: 1/2;
+            height: 100px;
+        }
+        #fpbutton1{
+            grid-row: 2/3;
+            grid-column:1/2 ;
+            height: 300px;
+            padding-top: 120px;
+        }
+        #three-2{
+            margin-left: 50px;
+            grid-column: 2/3;
+            grid-row: 2/3;
+            height: 300px;
+            width: 275px;
+        }
+        .fpthree-2sub1{
+            height: 170px;
+            background-color: black;
+        }
+        .fpthree-2sub2{
+            height: 130px;
+            background-color: white;
+        }
+        .fa-solid{
+            padding-top: 20px;
+            padding-left: 5px;
+            color: rgb(255, 179, 0);
+        }
+        .fpp2{
+            text-align: center;
+            padding-top: 15px;
+            font-size: 20px;
+            color: black;
+        }
+        .fphr2{
+            margin-top: 15px;
+        }
+        span{
+            margin-left: 80px;
+        }
+        #three-3{
+            grid-column: 3/4;
+            grid-row: 2/3;
+            height: 300px;
+            width: 275px;
+            
+        }
+        #three-4{
+            grid-column: 4/5;
+            grid-row: 2/3;
+            height: 300px;
+            width: 275px;
+           
+        }
+        #three-5{
+            grid-column: 5/6;
+            grid-row: 2/3;
+            height: 300px;
+            width: 275px;
+           
+        }
+        #fpbutton2{
+            grid-column: 6/7;
+            grid-row: 2/3;
+            height: 300px;
+            padding-top: 120px;
+        }
+        .fpp1{
+            padding-left: 50px;
+            padding-top: 20px;
+            font-size: 25px;
+            color: white;
+        }
+        .fphr1{
+            color: black;
+            margin-left: 50px;
+            margin-top: 20px;
+            width: 90%;
+        }
+        .fpb1{
+            margin-top: 15px;
+            margin-left: 15px;
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+        }
+       .fpimg1{
+        padding-right: 15px;
+       }
+        .fpimg2{
+            padding-left: 15px;
+        }
+        .fifthpage{
+            height: 700px;
+            display: grid;
+            grid-template-columns: repeat(4);
+            background-repeat: no-repeat;
+            background-image: url(images/facts-bg.jpg)
+            
+        }
+       
+        #four-1{
+            margin-top: 90px;
+            margin-left:  85px; ;
+            grid-row:1/2;
+            grid-column: 1/4;
+            height: 90px;
+            width: 30%;
+        }
+        #four-2{
+            margin-top: 10px;
+            height: 150px;
+            width: 400px;
+            border-radius: 20px;
+            grid-row:2/3;
+            grid-column: 1/2;
+            margin-left: 85px;
+            background-color: rgb(192, 181, 181,0.5);
+        }
+        #four-3{
+            height: 150px;
+            width: 400px;
+            border-radius: 20px;
+            grid-row:2/3;
+            grid-column: 2/3;
+            margin-top: 50px;
+            background-color: rgb(192, 181, 181,0.5);
+
+        }
+        #four-4{
+            height: 400px;
+            width: 400px;
+            border-radius: 20px;
+            grid-row:2/4;
+            grid-column: 3/4;
+            background-image: url(images/video-item-bg.jpg);
+          
+            
+          
+        }
+        #four-5{
+            height: 150px;
+            width: 400px;
+            border-radius: 20px;
+            grid-row:3/4;
+            grid-column: 1/2;
+            margin-left: 85px;
+            background-color: rgb(192, 181, 181,0.5);
+           
+        }
+        #four-6{
+            height: 150px;
+            width: 400px;
+            border-radius: 20px;
+            grid-row:3/4;
+            grid-column: 2/3;
+            margin-top: 50px;
+            background-color: rgb(192, 181, 181,0.5);
+        }
+        .fifthpagep1{
+            font-size: 30px;
+            color: white;
+            text-align: center;
+        }
+        .fifthpagep2{
+            font-size: 35px;
+            color: rgb(236, 167, 41);
+            text-align: center;
+        }
+        .fifthpagep3{
+            font-size: 25px;
+            color: white;
+            text-align: center;
+        }
+        .fifthpageimg1{
+            margin-top: 160px;
+            margin-left: 180px;
+        }
+        .sixthpage{
+            display: grid;
+            grid-template-columns: repeat(2);
+            background-image: url(images/meetings-page-bg.jpg);
+            height: 700px;
+        }
+        .five{
+            border: solid;
+            
+           
+        }
+        #five-1{
+            margin-left: 100px;
+            margin-top: 120px;
+            border-radius: 20px;
+            grid-row: 1/2;
+            grid-column: 1/2;
+            height: 400px;
+            width: 750px;
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #five-2{
+            margin-top: 100px;
+            border-radius: 20px;
+            grid-row: 1/2;
+            grid-column: 2/3;
+            height: 520px;
+            width:300px;
+            background-color: brown;
+        }
+        .sipp1{
+           font-size: 25px;
+           padding-left: 40px;
+        }
+        .input1{
+           margin-left: 25px;
+           margin-top: 10px; 
+           padding-left: 10px;
+           border-radius: 10px;
+           height: 35px;
+           width: 200px;
+           background-color: rgb(236, 244, 244);
+         }
+        .siphr1{
+            margin-top: 0px;
+            height: 0px;
+            margin-left: 40px;
+            width: 90%;
+            }
+            .input2{
+            background-color: rgb(236, 244, 244);
+            padding-bottom: 50px;
+            margin-left: 25px;
+            padding-left: 10px;
+            border-radius: 10px;
+            height: 80px;
+            width: 670px;
+          }
+        .sipb1{
+           color: white;
+           border: none;
+           background-color: rgb(121, 26, 26);
+           border-radius: 20px;
+           margin-left: 30px;
+           height: 40px;
+           width: 200px;
+          }
+          .sipp2{
+          padding-top: 10px;
+          text-align: center;
+          font-size: 20px;
+           }
+          .sipp3{
+          padding-top: 20px;
+          text-align: center;
+          font-size: 20px;
+          color: white;
+        }
+         .siphr2{
+        margin-top: 40px;
+        margin-left: 60px;
+        width: 60%;
+}
+
+      
+       
+ 
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="video-content">
+            <video src="images/course-video.mp4" autoplay loop muted></video>
+        </div>
+         <div class="logo">EDU MEETING</div> 
+        <div class="links">
+                <a href="">HOME</a>
+                <a href="">MEETINGS</a>
+                <a href="">APPLY NOW</a>
+                <a href="">PAGES</a>
+                <a href="">COURSES</a>
+                <a href="">CONTACT US</a>    
+        </div>
+        <div class="section">
+            <p class="headp1">HELLO STUDENTS</p>
+            <p class="headp2">WELCOME TO EDUCATION</p>
+            <p class="headp3">This is an edu meeting HTML CSS template provided by <span class="blue">TemplateMo website</span>. This <br>is a Bootstrap layout. The video background is taken from Pexels website, a group <br>of young people by <span>Pressmaster</span>.</p>
+            <button class="headb1">JOIN US NOW!</button>
+        </div>
+    </div>
+    <div class="section_1">
+        <button class="headb2"><img src="images/prev.png" alt="" class="headimg1"></button>
+        <div class="service1">
+            <center><img src="service-icon-01.png" alt="" class="headimg2"></center>
+            <center><p class="headp4">Best Education</p></center>
+            <p class="headp5">Suspendisse tempor mouris a sem <br>elementum bibendum. Praesent facilisis <br>massa non vestibulum.</p>
+        </div>
+        <div class="service2">
+            <center><img src="service-icon-02.png" alt="" class="headimg3"></center>
+            <center><p class="headp6">Best Teachers</p></center>
+            <p class="headp7">Suspendisse tempor mouris a sem <br>elementum bibendum. Praesent facilisis <br>massa non vestibulum.</p>
+        </div>
+        <div class="service3">
+            <center><img src="service-icon-03.png" alt="" class="headimg4"></center>
+            <center><p class="headp8">Best Students</p></center>
+            <p class="headp9">Suspendisse tempor mouris a sem <br>elementum bibendum. Praesent facilisis <br>massa non vestibulum.</p>
+        </div>
+        <button class="headb3"><img src="images/next.png" alt="" class="headimg5"></button>
+    </div>
+    <div class="secondpage">
+        <div class="one" id="one-1">
+            <p class="spp1" >Upcoming Mettings <hr class="sphr1" > </p> 
+        </div>
+        <div class="one" id="one-2">
+            <p class="spp2" >Meeting Catgories</p>
+            <hr class="sphr2">
+            <p class="spp3">Lorem, ipsum dolor.</p>
+            <p class="spp3">Lorem, ipsum dolor.</p>
+            <p class="spp3">Lorem, ipsum dolor.</p>
+            <p class="spp3">Lorem, ipsum dolor.</p>
+            <p class="spp3">Lorem, ipsum dolor.</p>
+            <hr class="sphr2">
+            <button class="spbu1" >All Upcoming Meetings</button>
+        </div>
+        <div class="one" id="one-3">
+            <div class="one-3subdiv1" >
+                <img class="spimg1" src="images/meeting-01.jpg" alt="" srcset="">
+               <button class="spbu2" > $22.00</button>
+            </div>
+            <div class="one-3subdiv2">
+                <p class="spp4" > Nov <b> New lecturers Meeting</b></p>
+                <p class="spp5" ><b>10</b> Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="one" id="one-4">
+            <div class="one-4subdiv1" >
+                <img class="spimg1" src="images/meeting-02.jpg" alt="">
+                <button class="spbu2" > $22.00</button>
+            </div>
+            <div class="one-4subdiv2" >
+                <p class="spp4" > Nov <b> New lecturers Meeting</b></p>
+                <p class="spp5" ><b>10</b> Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="one" id="one-5">
+            <div class="one-5subdiv1">
+                <img class="spimg1" src="images/meeting-03.jpg" alt="" srcset="">
+                <button class="spbu2" > $22.00</button>
+            </div>
+            <div class="one-5subdiv2">
+                <p class="spp4" > Nov <b> New lecturers Meeting</b></p>
+                <p class="spp5" ><b>10</b> Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div class="one" id="one-6">
+            <div class="one-6subdiv1">
+                <img class="spimg1" src="images/meeting-03.jpg" alt="" srcset="">
+                <button class="spbu2" > $22.00</button>
+            </div>
+            <div class="one-6subdiv2" >
+                <p class="spp4" > Nov <b> New lecturers Meeting</b></p>
+                <p class="spp5" ><b>10</b> Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+     </div>
+     <div class="thirdpage" >
+        <div class="two" id="two-1">
+            <p class="tpp1" >APPLY FOR BACHELOR DEGREE</p>
+            <p class="tpp2">You are allowed to use this edu meeting CSS template for your <br> school or university or business. You can feel free to modify or edit <br> this layout.</p>
+            <button class="tpb1" >Join Us Now !</button>
+        </div>
+        <div class="two" id="two-2">
+            <p class="tpp1" >APPLY FOR BACHELOR DEGREE</p>
+            <p class="tpp2">You are allowed to use this edu meeting CSS template for your <br> school or university or business. You can feel free to modify or edit <br> this layout.</p>
+            <button class="tpb1" >Join Us Now !</button>
+        </div>
+        <div class="two" id="two-3">
+            <p class="tpp3">About Edu Meeting HTML Template</p>
+            <p class="tpp4" >If you want to get the latest collection of HTML <br> CSS templates for your websites, you may visit <br> toocss.com website. If you need a working <br> contact form script, please visit our contact <br> page for more info.</p>
+            <hr class="tphr1" >
+            <p class="tpp5"> <b>HTML CSS Bootstrap Layout</b></p>
+            <hr class="tphr1" >
+            <p class="tpp5"> <b>Please tell your friend</b></p>
+            <hr class="tphr1" >
+            <p class="tpp5"> <b>Share this to your friend</b></p>
+        </div>
+    </div>
+    <div class="fourthpage" >
+        <div class="three" id="three-1">
+            <p class="fpp1" >OUR POPULAR COURSE</p>
+            <hr class="fphr1" >
+        </div>
+        <div class="three" id="fpbutton1"> <button class="fpb1"><img class="fpimg1" src="images/prev.png" alt="" srcset=""></button></div>  
+        <div class="three" id="three-2">
+            <div class="fpthree-2sub1">
+                <img src="images/course-01.jpg" alt="" srcset="">
+            </div>
+            <div class="fpthree-2sub2">
+                <p class="fpp2" >Lorem ipsum dolor sit.</p>
+                <hr class="fphr2">
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  <span>$160</span>  
+                </p>
+            </div>
+        </div>
+        <div class="three" id="three-3">
+            <div class="fpthree-2sub1">
+                <img src="images/course-02.jpg" alt="" srcset="">
+            </div>
+            <div class="fpthree-2sub2">
+                <p class="fpp2" >Lorem ipsum dolor sit.</p>
+                <hr class="fphr2">
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  <span>$160</span>  
+                </p>
+            </div>
+        </div>
+        <div class="three" id="three-4">
+            <div class="fpthree-2sub1">
+                <img src="images/course-03.jpg" alt="" srcset="">
+            </div>
+            <div class="fpthree-2sub2">
+                <p class="fpp2" >Lorem ipsum dolor sit.</p>
+                <hr class="fphr2">
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  <span>$160</span>  
+                </p>
+            </div>
+        </div>
+        <div class="three" id="three-5">
+            <div class="fpthree-2sub1">
+                <img src="images/course-04.jpg" alt="" srcset="">
+            </div>
+            <div class="fpthree-2sub2">
+                <p class="fpp2" >Lorem ipsum dolor sit.</p>
+                <hr class="fphr2">
+                <p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  <span>$160</span>  
+                </p>
+            </div>
+        </div>
+        <div class="three" id="fpbutton2"> <button class="fpb1"><img class="fpimg2" src="images/next.png" alt="" srcset=""></button></div>
+       </div>
+       <div class="fifthpage" >
+        <div class="four" id="four-1"> <p class="fifthpagep1">A Few Facts About Our <br> University</p></div>
+        <div class="four" id="four-2"><p class="fifthpagep2" >94% </p> <p class="fifthpagep3"> Succesed Students</p></div>
+        <div class="four" id="four-3"><p class="fifthpagep2" >94%</p> <p class="fifthpagep3" >Succesed Students</p></div>
+        <div class="four" id="four-4">
+            <img class="fifthpageimg1" src="images/play-icon.png" alt="" srcset="">
+        </div>
+        <div class="four" id="four-5"><p class="fifthpagep2" >94% </p><p class="fifthpagep3"> Succesed  Students</p></div>
+        <div class="four" id="four-6"><p class="fifthpagep2" >94% </p><p class="fifthpagep3"> Succesed  Students</p></div>
+    </div>
+    <div class="sixthpage">
+        <div class="five" id="five-1">
+            <p class="sipp1" >LET'S GET IN TOUCH </p>
+            <hr class="siphr1" >
+                    <p><input class="input1" type="text" value="Yourname...*"></p>
+                    <p><input class="input1" type="email" value="Yourmail..."></p>
+                    <p><input class="input1" type="text" value="Subject...*"></p>
+                    <p><input class="input2" type="text" value="Your Message.."></p>
+                    <button class="sipb1" >Send Message Now</button>
+        </div>
+        <div class="five" id="five-2">
+            <p class="sipp3" >Phone Number <br>010-11-121</p>
+            <hr class="siphr2" >
+            <p class="sipp3" >Email addres <br>name@Domain.com</p>
+            <hr class="siphr2" >
+            <p class="sipp3" >street addres <br>Rio de janerio <br>rj-97564 <br> Brazil </p>
+            <hr class="siphr2" >
+            <p class="sipp3" >Website Url <br> www.Domain.com</p>
+        </div>
+    </div>
+
+</body>
+</html>

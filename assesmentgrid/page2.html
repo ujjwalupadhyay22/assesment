@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+            /* ------------------------------------ second page-------------------------------------- */
+       
+        
+        .one{
+            border-radius: 20px;
+            border: solid;
+        }
+        .secondpage{
+            width: 100%;
+            display:  grid;
+            grid-template-columns: repeat(4);
+            height: 1300px;
+            background-image: url(images/meetings-page-bg.jpg);
+        }
+        #one-1{
+            height: 200px;
+            margin-top: 150px;
+            border: none;
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+        #one-2{
+            margin-left: 50px;
+            width: 320px;
+            height: 400px;
+            grid-column: 1/2;
+            grid-row: 2/3;
+            background-color: white;
+        }
+        #one-3{
+           
+            margin-left: 150px; 
+            height: 350px;
+            width: 375px;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .one-3subdiv1{  
+        position: relative;
+        height: 175px;
+       
+       }
+     .spbu2{
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        border: none;
+        border-radius: 10px;
+        width: 80px;
+        height: 35px
+
+     }
+     .spimg1{
+       border-top-left-radius: 20px;
+       border-top-right-radius: 20px;
+     }
+     .one-3subdiv2{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 40px;
+        height:calc(300px - 175px);
+        background-color: white;
+     }
+     .spp4{
+        padding-top: 20px;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+     }
+     .spp5{
+        text-align: center;
+        font-size: 20px;
+        color: black;
+     }
+        #one-4{
+            height: 350px;
+            width: 375px;
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        .one-4subdiv1{
+            position: relative;
+            height: 175px;
+        }
+       
+        .one-4subdiv2{
+         border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 40px;
+        height:calc(300px - 175px);
+        background-color: white;
+        }
+        #one-5{
+            background-image: url(images/meeting-03.jpg);
+            background-repeat: no-repeat;
+            margin-left: 150px;
+            height: 350px;
+            width: 375px;
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        .one-5subdiv1{
+            position: relative;
+            height: 175px;
+        }
+        .one-5subdiv2{
+            border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 40px;
+        height:calc(300px - 175px);
+        background-color: white;
+        }
+          
+        #one-6{
+            background-image: url(images/meeting-04.jpg);
+            background-repeat: no-repeat;
+            height: 350px;
+            width: 375px;
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+        .one-6subdiv1{
+            position: relative;
+            height: 175px; 
+        }
+        .one-6subdiv2{
+            border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 40px;
+        height:calc(300px - 175px);
+        background-color: white; 
+        }
+        .spp1{
+            color: white;
+            margin-top: 50px;
+            text-align: center;
+            font-size: 35px;
+            border: none;
+           
+        }
+        .sphr1{
+            color: white;
+            margin-top: 30px;
+            margin-left: 100px;
+            width: 85%;
+            height: 0px;
+        }
+        .spp2{
+            padding-top: 20px;
+            padding-left: 60px;
+            font-size: 25px;
+            color: black;
+        }
+        .spp3{
+            padding-left: 60px;
+            font-size: 20px;
+            color:black;
+        }
+        .sphr2{
+            margin-top: 15px;
+            width: 100%;
+            height: 0px;
+            color: rgb(14, 3, 3);
+        }
+        .spbu1{
+            margin-left: 50px;
+            color: white;
+            background-color: brown;
+            margin-top: 15px;
+            border: none;
+            border-radius: 20px;
+            font-size: 15px;
+            height: 50px;
+            width: 200px;
+        }
+        @media screen and (max-width:480px){
+            .secondpage{
+            width: 263%;
+            display:  grid;
+            grid-template-columns: repeat(4);
+            height: 1300px;
+            background-image: url(images/meetings-page-bg.jpg);
+        }
+        #one-1{
+            height: 200px;
+            margin-top: 150px;
+            border: none;
+            grid-column: 1/4;
+            grid-row: 1/2;
+        }
+        #one-2{
+            margin-left: 50px;
+            width: 320px;
+            height: 400px;
+            grid-column: 1/2;
+            grid-row: 2/3;
+            background-color: white;
+        }
+        #one-3{
+            margin-left: 50px; 
+            height: 350px;
+            width: 375px;
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+        .one-3subdiv1{  
+        position: relative;
+        height: 175px;
+       
+       }
+     .spbu2{
+        position: absolute;
+        top: 10px;
+        left: 15px;
+        border: none;
+        border-radius: 10px;
+        width: 80px;
+        height: 35px
+
+     }
+     .spimg1{
+       border-top-left-radius: 20px;
+       border-top-right-radius: 20px;
+     }
+     .one-3subdiv2{
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 40px;
+        height:calc(300px - 175px);
+        background-color: white;
+     }
+     .spp4{
+        padding-top: 20px;
+        text-align: center;
+        font-size: 20px;
+        color: black;
+     }
+     .spp5{
+        text-align: center;
+        font-size: 20px;
+        color: black;
+     }
+        #one-4{
+            margin-left: -40px;
+            height: 350px;
+            width: 375px;
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+        .one-4subdiv1{
+            position: relative;
+            height: 175px;
+        }
+       
+        .one-4subdiv2{
+         border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 40px;
+        height:calc(300px - 175px);
+        background-color: white;
+        }
+        #one-5{
+            margin-left: 50px; 
+            background-image: url(images/meeting-03.jpg);
+            background-repeat: no-repeat;
+            height: 350px;
+            width: 375px;
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        .one-5subdiv1{
+            position: relative;
+            height: 175px;
+        }
+        .one-5subdiv2{
+            border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 40px;
+        height:calc(300px - 175px);
+        background-color: white;
+        }
+          
+        #one-6{
+            margin-left: -50px;
+            background-image: url(images/meeting-04.jpg);
+            background-repeat: no-repeat;
+            height: 350px;
+            width: 375px;
+            grid-column: 3/4;
+            grid-row: 3/4;
+        }
+        .one-6subdiv1{
+           
+            position: relative;
+            height: 175px; 
+        }
+        .one-6subdiv2{
+            border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        margin-top: 40px;
+        height:calc(300px - 175px);
+        background-color: white; 
+        }
+        .spp1{
+            color: white;
+            margin-top: 50px;
+            text-align: center;
+            font-size: 35px;
+            border: none;
+           
+        }
+        .sphr1{
+            color: white;
+            margin-top: 30px;
+            margin-left: 100px;
+            width: 85%;
+            height: 0px;
+        }
+        .spp2{
+            padding-top: 20px;
+            padding-left: 60px;
+            font-size: 25px;
+            color: black;
+        }
+        .spp3{
+            padding-left: 60px;
+            font-size: 20px;
+            color:black;
+        }
+        .sphr2{
+            margin-top: 15px;
+            width: 100%;
+            height: 0px;
+            color: rgb(14, 3, 3);
+        }
+        .spbu1{
+            margin-left: 50px;
+            color: white;
+            background-color: brown;
+            margin-top: 15px;
+            border: none;
+            border-radius: 20px;
+            font-size: 15px;
+            height: 50px;
+            width: 200px;
+        }
+        }
+      
+       
+      
+    </style>
+</head>
+<body>
+ <div class="secondpage">
+    <div class="one" id="one-1">
+        <p class="spp1" >Upcoming Mettings <hr class="sphr1" > </p> 
+    </div>
+    <div class="one" id="one-2">
+        <p class="spp2" >Meeting Catgories</p>
+        <hr class="sphr2">
+        <p class="spp3">Lorem, ipsum dolor.</p>
+        <p class="spp3">Lorem, ipsum dolor.</p>
+        <p class="spp3">Lorem, ipsum dolor.</p>
+        <p class="spp3">Lorem, ipsum dolor.</p>
+        <p class="spp3">Lorem, ipsum dolor.</p>
+        <hr class="sphr2">
+        <button class="spbu1" >All Upcoming Meetings</button>
+    </div>
+    <div class="one" id="one-3">
+        <div class="one-3subdiv1" >
+            <img class="spimg1" src="images/meeting-01.jpg" alt="" srcset="">
+           <button class="spbu2" > $22.00</button>
+        </div>
+        <div class="one-3subdiv2">
+            <p class="spp4" > Nov <b> New lecturers Meeting</b></p>
+            <p class="spp5" ><b>10</b> Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <div class="one" id="one-4">
+        <div class="one-4subdiv1" >
+            <img class="spimg1" src="images/meeting-02.jpg" alt="">
+            <button class="spbu2" > $22.00</button>
+        </div>
+        <div class="one-4subdiv2" >
+            <p class="spp4" > Nov <b> New lecturers Meeting</b></p>
+            <p class="spp5" ><b>10</b> Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <div class="one" id="one-5">
+        <div class="one-5subdiv1">
+            <img class="spimg1" src="images/meeting-03.jpg" alt="" srcset="">
+            <button class="spbu2" > $22.00</button>
+        </div>
+        <div class="one-5subdiv2">
+            <p class="spp4" > Nov <b> New lecturers Meeting</b></p>
+            <p class="spp5" ><b>10</b> Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <div class="one" id="one-6">
+        <div class="one-6subdiv1">
+            <img class="spimg1" src="images/meeting-03.jpg" alt="" srcset="">
+            <button class="spbu2" > $22.00</button>
+        </div>
+        <div class="one-6subdiv2" >
+            <p class="spp4" > Nov <b> New lecturers Meeting</b></p>
+            <p class="spp5" ><b>10</b> Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+ </div>
+</body>
+</html>
